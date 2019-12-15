@@ -1,0 +1,20 @@
+:root {
+    --first-color: #060E40;
+    --second-color: #A65746;
+    --third-color: #BFADA8;
+}
+
+header {
+    background-color: var(--first-color);
+    padding: 1rem;
+    height: 8vh;
+}
+
+.logo {
+    height: 11vh;
+    width: 75%;
+}
+
+nav {
+    display: none;
+}
