@@ -4,17 +4,61 @@
     --third-color: #BFADA8;
 }
 
-header {
+.app {
+    min-height: 100vh;
+    line-height: 1.4;
+  
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 'header'
+                         'main'
+                         'footer';
+}
+
+.header {
+    grid-area: header;
     background-color: var(--first-color);
     padding: 1rem;
-    height: 8vh;
+    /* height: 9vh; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* header a {
+    color: white;
+    text-decoration: none;
+    
+} */
+
+.nav-icon {
+    color: white;
+    height: 35px;
+    width: 35px;
+    /* cursor: pointer; */
+    
 }
 
 .logo {
     height: 11vh;
-    width: 75%;
+    width: 70%;
+    padding: 0;
 }
 
 nav {
     display: none;
+}
+
+.main {
+    grid-area: main;
+    margin: auto;
+    width: 90%;
+  
+}
+
+.footer {
+    grid-area: footer;
 }
