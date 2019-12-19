@@ -5,14 +5,15 @@
 }
 
 .app {
+    font-family: 'Courier New', Courier, monospace;
     min-height: 100vh;
     line-height: 1.4;
   
-
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: 'header'
+                         'banner'
                          'main'
                          'footer';
 }
@@ -25,12 +26,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 header a {
    font-size: 1.5rem;
 }
+
+.logo {
+    height: 8vh;
+    width: 80%;
+    padding: 0;
+}
+
+/* ========= navigation-menu ========= */
 
 .toggle {
   display: flex;
@@ -39,19 +47,11 @@ header a {
   color: white;
 }
 
-
 .nav-icon {
     color: white;
     height: 35px;
     width: 35px;
     /* cursor: pointer; */
-    
-}
-
-.logo {
-    height: 11vh;
-    width: 70%;
-    padding: 0;
 }
 
 .nav {
@@ -74,22 +74,81 @@ header a {
     /*transform: translateY(100%);*/
 }
 
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  vertical-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: steelblue;
+}
 
 .nav:target { transform: translate(0, 0); }
 
+.list-items { text-align: center; }
 
+/* =========== main content ============ */
 
-.list-items {
-    text-align: center;
+.cover-page {
+    background-image: url(/assets/imgs/background.jpg);
+    background-color: var(--second-color);
+    position: relative;
     
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 70vh;
+    opacity: .9;
 
 }
+
+.cover-page-text {
+  text-align: center;
+  width: 85%;
+  opacity: .7;
+  position: absolute;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 2px 10px 10px rgb(37, 36, 36);
+}
+
+.cover-page-text h2 {
+    opacity: .9;
+    color: black;
+
+}
+
+.welcome-title {
+    background-color: var(--first-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    top: -35px;
+    z-index: 1;
+    
+}
+
+/* .background-img-banner {
+    background-image: url(/assets/imgs/background.jpg);
+    background-color: red; 
+}
+    */
 
 .main {
     grid-area: main;
     margin: auto;
-    width: 90%;
-  
+    width: 90%;  
 }
 
 .footer {
