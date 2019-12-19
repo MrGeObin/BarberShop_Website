@@ -14,6 +14,7 @@
     grid-template-rows: repeat(4, auto);
     grid-template-areas: 'header'
                          'banner'
+                         'pictures'
                          'main'
                          'footer';
 }
@@ -92,7 +93,7 @@ header a {
 
 .list-items { text-align: center; }
 
-/* =========== main content ============ */
+/* =========== parallax banner ============ */
 
 .cover-page {
     background-image: url(/assets/imgs/background.jpg);
@@ -115,7 +116,7 @@ header a {
   opacity: .7;
   position: absolute;
   padding: 20px;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
@@ -126,6 +127,14 @@ header a {
     opacity: .9;
     color: black;
 
+}
+
+/* =========== main content ============ */
+
+.main {
+    grid-area: main;
+    margin: auto;
+    width: 90%;  
 }
 
 .welcome-title {
@@ -139,18 +148,48 @@ header a {
     
 }
 
-/* .background-img-banner {
-    background-image: url(/assets/imgs/background.jpg);
-    background-color: red; 
+.barbershop-icon {
+    display: none;
 }
-    */
 
-.main {
-    grid-area: main;
-    margin: auto;
-    width: 90%;  
+.pictures {
+    grid-area: pictures;
+    z-index: -1;
 }
+
+div.polaroid {
+    position: relative;
+    top: 25px;
+    width: 280px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    z-index: -1;
+}
+
+div.rotate_right {
+    float: right;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+}
+
+div.rotate_left {
+    float: left;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Safari */
+    transform: rotate(-8deg);
+}
+
+.experience-title{
+    background-color: var(--second-color);
+    top: 5px;
+}
+
+
 
 .footer {
     grid-area: footer;
 }
+
