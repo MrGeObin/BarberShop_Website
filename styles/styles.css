@@ -50,7 +50,7 @@ header a {
 }
 
 .nav-icon {
-    color: white;
+    color: red;
     height: 35px;
     width: 35px;
     /* cursor: pointer; */
@@ -205,6 +205,8 @@ div.rotate_left {
     grid-gap: 1rem;
     position: relative;
     margin: 6rem 0;
+    margin-bottom: var(--margin-botton);
+
 }
 .experience-item {
     display: flex;
@@ -243,6 +245,7 @@ div.rotate_left {
     opacity: .9;
     text-align: center;
     padding: 2rem;
+    margin-bottom: var(--margin-botton);
 }
 
 .appointment-section h4 {
@@ -298,6 +301,21 @@ div.rotate_left {
 }
 
 .footer {
+    display: grid;
     grid-area: footer;
+    background-color: var(--first-color);
+    justify-items: center;
+}
+
+.logo-footer {
+    max-width: 85%;
+    
+}
+.footer-nav{
+    margin-bottom: var(--margin-botton);
+}
+
+small {
+    color: var(--third-color);
 }
 
