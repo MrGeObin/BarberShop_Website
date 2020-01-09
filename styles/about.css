@@ -1,0 +1,33 @@
+:root {
+    --first-color: #060E40;
+    --second-color: #A65746;
+    --third-color: #BFADA8;
+    --margin-botton: 1rem;
+}
+
+.app {
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    line-height: 1.4;
+  
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 'header'
+                         'banner'
+                         'main'
+                         'footer';
+}
+
+
+.cover-page {
+    background-image: url(/assets/imgs/cutting-hair.jpg);
+    height: 80vh;   
+    opacity: .9;
+    background-attachment: scroll;
+}
+
+.main {
+    margin-bottom: var(--margin-botton);
+
+}

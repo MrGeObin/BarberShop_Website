@@ -99,6 +99,7 @@ header a {
 /* =========== parallax banner ============ */
 
 .cover-page {
+    grid-area: banner;
     background-image: url(/assets/imgs/background.jpg);
     background-color: var(--second-color);
     position: relative;
@@ -110,6 +111,7 @@ header a {
     color: white;
     height: 70vh;
     opacity: .9;
+    
 
 }
 
@@ -124,6 +126,7 @@ header a {
   transform: translate(-50%, -50%);
   background-color: white;
   box-shadow: 2px 10px 10px rgb(37, 36, 36);
+  
 }
 
 .cover-page-text h2 {
@@ -245,7 +248,7 @@ div.rotate_left {
     height: 55vh;
     opacity: .9;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: var(--margin-botton);
 }
 
@@ -320,3 +323,32 @@ small {
     color: var(--third-color);
 }
 
+/* =========== Media queries ============ */
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+    .schedule {
+        background-color: var(--third-color);
+        opacity: .4;
+        height: 250px;
+        width: 94%;
+        position: absolute;
+        z-index: -1;
+    }
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
