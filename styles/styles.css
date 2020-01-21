@@ -224,7 +224,6 @@ div.rotate_left {
 
 .experience-item img {
     position: relative;
-    top: 25%;
     background-color: var(--third-color);
     border-radius: 50%;
     padding: .5rem;
@@ -281,27 +280,35 @@ div.rotate_left {
     cursor: pointer;
 }
 
-.schedule {
+/* .schedule {
     background-color: var(--third-color);
     opacity: .4;
     height: 250px;
     width: 280px;
     position: absolute;
     z-index: -1;
+} */
+
+
+.days-container {
+    background-color: var(--third-color);
+    opacity: 0.7;
+    filter: alpha(opacity=60);
+    padding: 25px 0;
+
 }
 
-.days {
-    color: white;
-    font-size: 1.3rem;
-    padding: 5px;
-    position: relative;
-    
-    
+.days-container p {
+    color: var(--second-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;    
 }
 
 .days h3 {
     margin-bottom: var(--margin-botton);
-
+    color: var(--second-color);
+    font-size: 1.9rem;
 }
 
 .footer {
@@ -340,7 +347,10 @@ small {
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
- 
+    .schedule {
+        width: 95%;
+    }
+
 }
  
 /* Large devices (desktops, 992px and up) */
