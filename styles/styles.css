@@ -6,7 +6,7 @@
 }
 
 .app {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     min-height: 100vh;
     line-height: 1.4;
   
@@ -101,7 +101,7 @@ header a {
 .cover-page {
     grid-area: banner;
     background-image: url(/assets/imgs/background.jpg);
-    background-color: var(--second-color);
+    background-color: white;
     position: relative;
     
     background-repeat: no-repeat;
@@ -335,27 +335,26 @@ small {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  
-    .schedule {
-        background-color: var(--third-color);
-        opacity: .4;
-        height: 250px;
-        width: 94%;
-        position: absolute;
-        z-index: -1;
-    }
+
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
-    .schedule {
-        width: 95%;
-    }
+
 
 }
  
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
- 
+    .nav-icon, .close{
+        display: none;
+    }
+
+    .list-items {
+        position: relative;
+        ;
+    }
+
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
