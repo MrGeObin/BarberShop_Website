@@ -355,6 +355,12 @@ small {
     justify-content: space-around;
     width: 80%;
 }
+
+.footer-nav {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
 }
  
 /* Large devices (desktops, 992px and up) */
