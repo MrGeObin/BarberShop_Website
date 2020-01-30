@@ -352,16 +352,29 @@ small {
 }
 .list-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 80%;
 }
 }
  
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+.list-items {
+    width: 65%;
+}
 
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
-    
+.list-items {
+    width: 50%;
+}
+
+.pictures {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
 }
