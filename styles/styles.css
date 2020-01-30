@@ -341,22 +341,26 @@ small {
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
 
+.toggle {
+    display: none;
+}
 
+.nav {
+    position: static;
+    transform: none;
+    justify-content: flex-end;
+}
+.list-items {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
 }
  
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    .nav-icon, .close{
-        display: none;
-    }
-
-    .list-items {
-        position: relative;
-        ;
-    }
 
 }
- 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
     
