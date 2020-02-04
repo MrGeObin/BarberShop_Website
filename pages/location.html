@@ -7,7 +7,8 @@
     <title>Eneida Hairdresser</title>
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/styles.css">
-    <script src="https://kit.fontawesome.com/2b5afb7910.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/location.css">
+    <script src="https://kit.fontawesome.com/2b5afb7910.js"></script>
 </head>
 <body>
     <section class="app">
@@ -24,70 +25,21 @@
                 </ul>
             </nav>
         </header>
-        <section class="cover-page">
-            <div class="cover-page-text">
-                <h2>Your hair represents your
-            personality</h2>
-        </div>
+        <div class="title"> <h1>Location</h1> </div>
+        <section class="location-des">
+            <p>Come and join us, and let us show you what can we do for what style
+            you are looking for, we are close to Downtown LA, on Western ave
+            & Venice Blv, inside of the shopping Center next to Fallas Paredes.
+            </p>    
         </section>
-        <main class="main">
-            <section>
-                <div class="welcome-title"><h2>Eneida Beauty Salon</h2></div>
-                <p>Welcome to Eneida Salon, we are a licensed stylist, our specialty is the women's hair with 5 years of experience in the
-                    area.</p>
-            </section>
-            <aside class="barbershop-icon">
-                <img src="/assets/imgs/barber-icon.png" alt="barbershop-img">
-            </aside>
+        <div class="mapContainer">
+            <div id="map"></div>
+        </div>
+        <div class="address">
+            <h2>1655 S Western Ave Suite B
+            Los Angeles, CA 90006</h2>
+        </div> 
 
-            <section class="pictures">
-                <div class="polaroid rotate_right">
-                    <img src="/assets/imgs/fixing-hair.jpg" alt="Pulpit rock" height="245px">
-                    <p class="caption">The pulpit rock in Lysefjorden, Norway.</p>
-                </div>
-                
-                <div class="polaroid rotate_left">
-                    <img src="/assets/imgs/barbershop-sign.jpg" alt="Monterosso al Mare" height="245px">
-                    <p class="caption">Monterosso al Mare. One of the five villages in Cinque Terre, Italy.</p>
-                </div>
-            </section>
-
-            <section class="experience-title">
-                <h2>Our experience</h2>
-            </section>
-            
-            <section class="experience-items">
-                <div class="experience-item">
-                    <img src="/assets/svg/woman-hair-cut.svg" alt="woman hair cut" height="70" width="70" />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, quod vero? Obcaecati necessitatibus laudantium autem nostrum. Est, iste. Dolores laborum delectus expedita consequatur corporis quam recusandae sed culpa asperiores sequi?</p>
-                </div>
-                <div class="experience-item">
-                    <img src="/assets/svg/hair-curler.svg" alt="hair curler" height="70" width="70" />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, quod vero? Obcaecati necessitatibus laudantium autem nostrum. Est, iste. Dolores laborum delectus expedita consequatur corporis quam recusandae sed culpa asperiores sequi?</p>
-                </div>
-                <div class="experience-item">
-                    <img src="/assets/svg/woman-sitting-waiting-on-a-hair-salon-chair-observing-the-wall-clock.svg" alt="woman sitting waiting" height="70" width="70" />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, quod vero? Obcaecati necessitatibus laudantium autem
-                        nostrum. Est, iste. Dolores laborum delectus expedita consequatur corporis quam recusandae sed culpa asperiores
-                        sequi?</p>
-                </div>
-            </section>
-            <section class="appointment-section">
-                <h4>Let's appointment today</h4>
-                <button class="cta-call">CALL NOW</button>
-                <h2>+1(323)574-1197</h2>
-                <div class="schedule"></div>
-                    <div class="days">
-                        <h3>SCHEDULE</h3>
-                        <p>Tuesday 8 AM - 4 PM</p>
-                        <p>Wednesday 8 AM - 4 PM</p>
-                        <p>Thursday 8 AM - 4 PM</p>
-                        <p>Friday 8 AM - 4 PM</p>
-                        <p>Saturday 8 AM - 3 PM</p>
-                    </div>
-               
-            </section>
-        </main>
         <footer class="footer">
             <img src="/assets/imgs/logo.png" alt="logo-footer" class="logo-footer" />
             <nav class="footer-nav">
@@ -100,6 +52,20 @@
             <small>&copy; Copyright 2020, Eneida Beauty Salon</small>
         </footer>
     </section>  
+    <script>
+        function initMap() {
+            let location = { lat: 34.052235, lng: -118.243683 };
+            let map = new google.maps.Map(document.getElementById('map'), {
+                center: location,
+                zoom: 5
+            });
+            
+        }
+    </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUyl_Ibnn2LjbDROxdrXnqm3BF2pWbVsM&callback=initMap"
+    type="text/javascript"></script>
+
 
 </body>
 </html>
+
